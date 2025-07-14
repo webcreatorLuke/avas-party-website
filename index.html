@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ava Bear's Party Planning</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff0f5;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #ffe4ec;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #d63384;
+      margin: 0;
+    }
+    header p {
+      color: #d63384;
+      font-size: 1.2rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+    }
+    .card h2 {
+      color: #e83e8c;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    .price-book {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .price {
+      font-weight: bold;
+      color: #c2185b;
+    }
+    .book-btn {
+      background-color: #f06292;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .custom-request {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .custom-request input {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 200px;
+    }
+    .send-btn {
+      background-color: #f06292;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ava Bear's Party Planning</h1>
+    <p>Fun-filled parties for kids ages 3 to 9!</p>
+  </header>
+
+  <div class="products">
+    <div class="card">
+      <h2>Princess Party Package</h2>
+      <p>A magical experience for your little royal with tiaras, fairy lights, and a mini castle!</p>
+      <div class="price-book">
+        <span class="price">$199</span>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Superhero Bash</h2>
+      <p>An action-packed adventure with capes, obstacle course games, and themed decorations.</p>
+      <div class="price-book">
+        <span class="price">$179</span>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Baking Bonanza</h2>
+      <p>Fun-filled baking activities where kids create their own cupcakes and cookies!</p>
+      <div class="price-book">
+        <span class="price">$149</span>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-request">
+    <h2>Want a custom party?</h2>
+    <input type="text" placeholder="Enter your name" />
+    <input type="text" placeholder="Party theme idea" />
+    <button class="send-btn">Send Request</button>
+  </div>
+</body>
+</html>
